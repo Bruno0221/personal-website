@@ -1,1 +1,89 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <header>
+        <img id="logo" href="#home">
+        <h1>Website title</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects-wrapper">Projects</a></li>
+                <li><a href="#contact-wrapper">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <img src="" alt="">
+            <h2>Welcome, friend</h2>
+            <p>This is a text about me.</p>
+        </section>
+        <section id="projects-wrapper">
+            <section class="projects">
+                <img src="" alt="">
+                <h3>Project 1</h3>
+                <p>Text about project</p>
+                <a href="">Learn more</a>
+            </section>
+            <section class="projects">
+                <img src="" alt="">
+                <h3>Project 2</h3>
+                <p>Text about project</p>
+                <a href="">Learn more</a>
+            </section>
+            <section class="projects">
+                <img src="" alt="">
+                <h3>Project 3</h3>
+                <p>Text about project</p>
+                <a href="">Learn more</a>
+            </section>
+        </section>
+        <section id="contact-wrapper">
+            <section>
+                <h3>Get in touch</h3>
+                <p>use the form or my socials</p>
+                <ul>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </section>
+            <form method="post" action="#">
+                <fieldset>
+                    <label for="first-name">
+                        <input name="first-name" id="first-name" type="text" placeholder="First Name" required>
+                    </label>
+                    <label for="last-name">
+                        <input id="last-name" name="last-name" type="text" placeholder="Last Name" required>
+                    </label>
+                    <label for="email">
+                        <input id="email" name="email" type="email" placeholder="Email" required>
+                    </label>
+                    <label for="bio">
+                        <textarea id="bio" name="bio" rows="5" cols="50" placeholder="Your message goes here" required></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>c by me</p>
+        </section>
+        <section><a href="#about">Go back up</a></section>
+        <section>
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
