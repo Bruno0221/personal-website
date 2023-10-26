@@ -100,4 +100,15 @@ a {
 
 footer {
     border-bottom: 2px solid black;
+    font-size: 12px;
   }
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-links li {
+    padding: 10px;
+}
