@@ -18,6 +18,21 @@ main {
     flex-direction: column;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #about {
     border: 1px solid black;
   }
