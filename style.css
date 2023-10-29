@@ -33,6 +33,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 0;
+    gap: 10px;;
 }
 
 .flex-space-evenly {
@@ -41,9 +42,6 @@ header {
   align-items: center;
 }
 
-nav ul li {
-    padding: 10px;
-}
 
 a {
     text-decoration: none;
@@ -177,7 +175,3 @@ label input {
 footer {
     font-size: 12px;
   }
-
-footer ul li {
-    padding: 5px;
-}
