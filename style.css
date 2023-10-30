@@ -1,13 +1,21 @@
+:root {
+  --bg-color: #1E2127;
+  --font-color-primary: #5B626F;
+  --font-color-secondary: #454152;
+}
+
 * {
   margin: 0;
 }
+
 
 html {
     font-family: Helvetica, sans-serif;
 }
 
 body {
-  background-color: darkgrey;
+  background-color: var(--bg-color);
+  color: var(--font-color-primary);
 }
 
 header {
@@ -49,7 +57,7 @@ a {
 }
 
 a:hover, a:active {
-  color: white;
+  color: var(--font-color-secondary);
   text-shadow: 2px 2px 8px #000;
 }
 
@@ -73,6 +81,7 @@ a:hover, a:active {
 
 #about-txt {
     border-left: 5px solid black;
+    font-weight: 400;
     padding: 20px;
     margin: 20px;
     line-height: 1.6;
@@ -126,6 +135,7 @@ a:hover, a:active {
   display: grid;
   gap: 5px;
   padding: 20px;
+  border: none;
 }
 
 #form-name {
@@ -163,13 +173,26 @@ a:hover, a:active {
 }
 
 input, textarea {
-  background-color: darkgrey;
+  background-color: var(--bg-color);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--font-color-primary);
+}
+
+textarea {
+  border: 1px solid black;
 }
 
 
 label input {
   border: none;
   border-bottom: 1px solid black;
+  color: var(--font-color-primary);
+}
+
+#form-button {
+  color: var(--font-color-primary);
 }
 
 footer {
