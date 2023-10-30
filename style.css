@@ -1,7 +1,8 @@
 :root {
-  --bg-color: #1E2127;
-  --font-color-primary: #5B626F;
-  --font-color-secondary: #454152;
+  --bg-color: #04152B;
+  --accent-color: #D34F00;
+  --font-color-primary: lightgrey;
+  --font-color-secondary: #fff;
 }
 
 * {
@@ -57,7 +58,7 @@ a {
 
 a:hover, a:active {
   color: var(--font-color-secondary);
-  text-shadow: 2px 2px 8px #000;
+  text-shadow: 2px 2px 8px var(--accent-color);
 }
 
 main > section {
@@ -84,13 +85,12 @@ main > section {
 }
 
 #about-txt {
-    border-left: 5px solid black;
+    border-left: 5px solid var(--accent-color);
     font-weight: 400;
     padding: 1rem;
     margin: 1rem;
     line-height: 1.6;
     max-width: 75ch;
-    height: 20vh;
 }
 
 #projects-wrapper {
