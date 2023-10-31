@@ -12,8 +12,8 @@
         <nav class="nav-links">
             <ul class="inline-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects-wrapper">Projects</a></li>
-                <li><a href="#contact-wrapper">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -26,9 +26,9 @@
             </div>
         </section>
     -->
-        <section id="about">
-            <img id="about-img" src="https://picsum.photos/500/400" alt="About Image">
-            <div id="about-txt">
+        <section id="about" class="flex-center">
+            <img class="about-img" src="https://picsum.photos/500/400" alt="About Image">
+            <div class="about-txt">
                 <h2>About me</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo nam recusandae iusto vel, vero voluptates repellat, iure laboriosam consequuntur aliquam natus? Commodi est vitae fugit nostrum, rerum illo excepturi ipsum. Quibusdam deserunt iste esse, aperiam tenetur dolores aspernatur sunt magnam similique. Libero atque placeat exercitationem dolorum numquam reprehenderit suscipit aliquam?</p>    
                 <h3>My Skills</h3>
@@ -40,28 +40,28 @@
                 </ul>
             </div>
         </section>
-        <section id="projects-wrapper">
-            <article class="projects">
+        <section id="projects" class="projects-wrapper flex-center">
+            <article class="project-items">
                 <img src="https://picsum.photos/150/100" alt="P1">
                 <h3>Project 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, atque. Ducimus unde explicabo, nostrum rem dolore consequuntur blanditiis corporis dolorem.</p>
                 <a href="">Learn more</a>
             </article>
-            <article class="projects">
+            <article class="project-items">
                 <img src="https://picsum.photos/150/100" alt="P2">
                 <h3>Project 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, atque. Ducimus unde explicabo, nostrum rem dolore consequuntur blanditiis corporis dolorem.</p>
                 <a href="">Learn more</a>
             </article>
-            <article class="projects">
+            <article class="project-items">
                 <img src="https://picsum.photos/150/100" alt="P3">
                 <h3>Project 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, atque. Ducimus unde explicabo, nostrum rem dolore consequuntur blanditiis corporis dolorem.</p>
                 <a href="">Learn more</a>
             </article>
         </section>
-        <section id="contact-wrapper">
-            <section id="contact-txt">
+        <section id="contact" class="contact-wrapper flex-center">
+            <section class="contact-txt">
                 <h3>Get in touch</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, tenetur pariatur commodi consectetur blanditiis harum dolorum consequuntur qui repellat ab accusamus sequi obcaecati repudiandae! Quo?</p>
                 <ul class="inline-links">
@@ -71,20 +71,20 @@
                 </ul>
             </section>
             <form method="post" action="#">
-                <fieldset id="contact-form">
-                    <label id="form-name" for="name">
+                <fieldset class="contact-form">
+                    <label class="form-name" for="name">
                         <input name="first-name" id="first-name" type="text" placeholder="Name*" required>
                     </label>
-                    <label id="form-email" for="email">
+                    <label class="form-email" for="email">
                         <input id="email" name="email" type="email" placeholder="Email*" required>
                     </label>
-                    <label id="form-phone" for="phone">
+                    <label class="form-phone" for="phone">
                         <input id="phone" name="phone" type="tel" placeholder="Phone">
                     </label>
-                    <label id="form-message" for="message">
+                    <label class="form-message" for="message">
                         <textarea id="message" name="message" rows="5" cols="50" placeholder="Your message goes here"></textarea>
                     </label>
-                    <input id="form-button" type="submit" value="Send">
+                    <input class="form-button" type="submit" value="Send">
                 </fieldset>
             </form>
         </section>
