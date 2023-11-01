@@ -28,6 +28,10 @@ header {
     padding: 1rem 0;
   }
 
+img {
+  max-width: 100%;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -52,9 +56,20 @@ header {
 }
 
 .flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 55em) {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  padding: 0 1em;
+  max-width: 75rem;
 }
 
 
@@ -73,21 +88,10 @@ a:hover, a:active {
   color: var(--accent-color);
 }
 
-main > section {
-  height: 30rem;
-}
-
-.welcome {
-  background: url(https://picsum.photos/id/664/1600/900);
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-}
-
-
 
 .about-img {
     margin: 1rem;
+    padding: 1rem;
     border-radius: 5px;
     
 }
@@ -99,6 +103,7 @@ main > section {
     margin: 1rem;
     line-height: 1.6;
     max-width: 75ch;
+    min-width: 20ch;
 }
 
 .projects-wrapper {
@@ -112,27 +117,22 @@ main > section {
     padding: 1rem;
     margin: 1rem;
     max-width: 20%;
-    min-width: 40ch;
+    min-width: 35ch;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     box-shadow: -1px -1px 10px -5px var(--light-blue);
   }
 
-  .project-items > img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-
 .contact-wrapper {
-    gap: 1rem;
     padding: 1rem;
-    height: 25rem;
+    margin: 1rem;
+    gap: 1rem;
   }
 
 .contact-txt {
-  width: 38ch;
+  min-width: 35ch;
+  max-width: 50ch;
   line-height: 1.6;
   text-align: left;
   display: flex;
@@ -179,10 +179,8 @@ main > section {
 .form-button {
   grid-row: 4;
   grid-column: 1 / span 2;
-  width: 50%;
   border-radius: 5px;
   border: 1px solid black;
-  width: 25%;
 }
 
 input, textarea {
@@ -195,6 +193,10 @@ input::placeholder, textarea::placeholder {
 
 textarea {
   border: 1px solid black;
+  outline: none;
+  resize: none;
+  color: var(--font-color-primary);
+  font-family: inherit
 }
 
 
