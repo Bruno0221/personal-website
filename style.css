@@ -1,5 +1,7 @@
 :root {
   --bg-color: #04152B;
+  --dark-blue: #031834;
+  --light-blue: #08418A;
   --accent-color: #D34F00;
   --font-color-primary: lightgrey;
   --font-color-secondary: #fff;
@@ -63,7 +65,7 @@ a {
 
 a:hover, a:active {
   color: var(--font-color-secondary);
-  text-shadow: 2px 2px 8px var(--accent-color);
+  text-shadow: 2px 2px 8px var(--light-blue);
 }
 
 .project-items > a {
@@ -85,9 +87,9 @@ main > section {
 
 
 .about-img {
-    padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
+    
 }
 
 .about-txt {
@@ -105,7 +107,6 @@ main > section {
   }
 
  .project-items {
-    border: 1px solid black;
     border-radius: 10px;
     box-shadow: 2px 2px 8px #031834;
     padding: 1rem;
@@ -115,6 +116,7 @@ main > section {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+    box-shadow: -1px -1px 10px -5px var(--light-blue);
   }
 
   .project-items > img {
@@ -131,24 +133,19 @@ main > section {
 
 .contact-txt {
   width: 38ch;
-  padding: 1rem;
   line-height: 1.6;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 .contact-txt > p {
-  padding: 1rem;
-}
-
-.contact-txt ul{
-  padding: 0;
+  margin-top: 1rem;
 }
 
 .contact-txt ul li {
-  padding: 5px;
+  padding-top: 5px;
 }
 
 .contact-form{
@@ -212,9 +209,9 @@ label input {
 }
 
 .form-button:hover {
-  background-color:var(--font-color-primary);
-  color: var(--bg-color);
-  box-shadow: 1px 1px 8px var(--accent-color);
+  background-color:var(--dark-blue);
+  color: var(--font-color-primary);
+  box-shadow: 1px 1px 8px var(--light-blue);
 }
 
 footer {
