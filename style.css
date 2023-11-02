@@ -144,6 +144,7 @@ a:active {
   margin: 1rem;
   gap: 1rem;
   border-right: 5px solid var(--accent-color);
+  overflow: hidden;
 }
 
 .contact-txt {
@@ -165,11 +166,10 @@ a:active {
 }
 
 .contact-form {
-  max-width: 10rem;
+  max-width: 25rem;
   display: grid;
-  gap: 5px;
+  gap: 1rem;
   border: none;
-  padding: 0;
 }
 
 .form-name {
@@ -204,6 +204,7 @@ textarea {
   background-color: var(--bg-color);
   outline: none;
   margin: 0.5rem;
+  width: 100%;
 }
 
 input::placeholder,
@@ -212,7 +213,6 @@ textarea::placeholder {
 }
 
 textarea {
-  width: 100%;
   min-height: 3rem;
   border: 1px solid var(--font-color-primary);
   border-radius: 2px;
