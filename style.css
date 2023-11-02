@@ -143,6 +143,7 @@ a:active {
   padding: 1rem;
   margin: 1rem;
   gap: 1rem;
+  border-right: 5px solid var(--accent-color);
 }
 
 .contact-txt {
