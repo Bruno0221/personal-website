@@ -5,6 +5,13 @@
   --accent-color: #d34f00;
   --font-color-primary: lightgrey;
   --font-color-secondary: #fff;
+
+  --font-size-700: 1.953rem;
+  --font-size-600: 1.563rem;
+  --font-size-500: 1.25rem;
+  --font-size-400: 1rem;
+  --font-size-300: 0.8rem;
+  --font-size-200: 0.64rem;
 }
 
 * {
@@ -29,6 +36,17 @@ header {
 
 img {
   max-width: 100%;
+}
+
+h2 {
+  font-size: var(--font-size-700);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: var(--font-size-500);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .nav {
@@ -184,6 +202,7 @@ input,
 textarea {
   background-color: var(--bg-color);
   outline: none;
+  margin: 0.5rem;
 }
 
 input::placeholder,
@@ -221,5 +240,5 @@ label input {
 footer {
   height: 3rem;
   border-top: 1px solid black;
-  font-size: 12px;
+  font-size: var(--font-size-300);
 }
