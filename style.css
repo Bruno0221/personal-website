@@ -72,15 +72,19 @@ h3 {
   align-items: center;
 }
 
-.flex-center {
-  margin: 0 auto;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (min-width: 55em) {
-  .flex-center {
+  .center {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
 }
 
@@ -136,14 +140,11 @@ a:active {
 
 .contact-wrapper {
   padding: 1rem;
-  margin: 1rem;
   gap: 1rem;
-  border-right: 5px solid var(--accent-color);
   overflow: hidden;
 }
 
 .contact-txt {
-  min-width: 35ch;
   max-width: 50ch;
   line-height: 1.6;
   text-align: left;
@@ -165,6 +166,8 @@ a:active {
   display: grid;
   gap: 1rem;
   border: none;
+  padding-right: 2rem;
+  border-right: 5px solid var(--accent-color);
 }
 
 .form-name {
